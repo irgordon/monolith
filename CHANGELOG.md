@@ -7,6 +7,10 @@ Notable repository changes are tracked in this file.
 - Added a minimal internal authority validation helper surface for deterministic validation-order shape.
 - Added CI compile-shape enforcement via `.github/workflows/ci.yml`.
 - Continued structure-first pre-alpha development with no production runtime behavior.
+- Added kernel/object/handle_resolution.h
+- Added kernel/object/handle_resolution.c
+- Added tests/compile/handle_resolution_header_compile.c
+- Introduced a minimal internal handle-resolution helper surface for deterministic resolved-handle record shape only; no full authority enforcement, lookup, type checks, liveness checks, rights enforcement, transfer, revocation, or mutation behavior is implemented.
 
 v0.0.0
 - Added .github/workflows/ci.yml for initial CI scaffolding on push and pull_request.
