@@ -10,5 +10,7 @@ OS_NORETURN static void test_noreturn(void) {
 
 int main(void) {
     OS_UNUSED int ref = 0;
-    test_noreturn();
+    void (*fn)(void) = test_noreturn;
+    (void)fn;
+    return ref;
 }
