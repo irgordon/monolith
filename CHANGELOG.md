@@ -6,8 +6,10 @@ v0.0.0
 - Added include/os/status.h
 - Added include/os/types.h
 - Added include/os/compiler.h
+- Added include/os/object.h
 - Added tests/compile/status_header_compile.c
 - Added tests/compile/types_header_compile.c
 - Added tests/compile/compiler_header_compile.c
+- Added tests/compile/object_header_compile.c
 - All changes are structure-only.
 - No runtime behavior implemented.
