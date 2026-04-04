@@ -12,5 +12,5 @@ int main(void) {
     s += OS_STATUS_REVOCATION_COMPLETE;
     s += OS_STATUS_REVOCATION_PENDING;
 
-    return (s == OS_STATUS_SUCCESS) ? 0 : 0;
+    return (s == OS_STATUS_SUCCESS) ? 0 : 1;
 }
