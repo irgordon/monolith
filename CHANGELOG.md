@@ -29,3 +29,7 @@ v0.0.0
 - Added include/os/revocation.h
 - Added tests/compile/revocation_header_compile.c
 - Revocation contract additions are structure-only and introduce no runtime behavior.
+
+- Added kernel/object/authority_validation_contract.h
+- Added tests/compile/authority_validation_contract_compile.c
+- Internal authority validation contract additions are structure-only and introduce no runtime behavior.
