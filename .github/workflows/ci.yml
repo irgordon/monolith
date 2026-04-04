@@ -6,6 +6,8 @@ on:
 
 jobs:
   compile-shape:
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -14,6 +16,10 @@ jobs:
       - name: Compile compile-shape tests
         run: |
           set -euo pipefail
+          found=0
           for file in tests/compile/*_compile.c; do
+            [ -e "$file" ] || continue
+            found=1
             cc -Iinclude -I. -c "$file"
           done
+          [ "$found" -eq 1 ]
