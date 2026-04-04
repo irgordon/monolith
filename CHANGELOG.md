@@ -38,3 +38,6 @@ v0.0.0
 - Added kernel/object/handle_table_contract.h
 - Added tests/compile/handle_table_contract_compile.c
 - Internal handle table contract additions are structure-only and introduce no runtime behavior.
+- Added kernel/object/object_lifetime_contract.h
+- Added tests/compile/object_lifetime_contract_compile.c
+- Internal object lifetime contract additions are structure-only and introduce no runtime behavior.
