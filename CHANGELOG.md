@@ -26,3 +26,6 @@ v0.0.0
 - Added tests/compile/transfer_header_compile.c
 - Transfer contract additions are structure-only and introduce no runtime behavior.
 
+- Added include/os/revocation.h
+- Added tests/compile/revocation_header_compile.c
+- Revocation contract additions are structure-only and introduce no runtime behavior.
