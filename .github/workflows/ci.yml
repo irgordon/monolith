@@ -17,8 +17,7 @@ jobs:
         run: |
           set -euo pipefail
           found=0
-          for file in tests/compile/*_compile.c; do
-            [ -e "$file" ] || continue
+          for file in $(find tests/compile -maxdepth 1 -type f -name '*_compile.c' | sort); do
             found=1
             cc -Iinclude -I. -c "$file"
           done
