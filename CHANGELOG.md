@@ -17,5 +17,8 @@ v0.0.0
 - Added tests/compile/rights_header_compile.c
 - Added tests/compile/handle_header_compile.c
 - Added tests/compile/handle_table_header_compile.c
+- Added include/os/authority.h
+- Added tests/compile/authority_header_compile.c
 - All changes are structure-only, including the minimal handle table contract surface.
+- All authority-surface changes are structure-only and introduce no runtime behavior.
 - No runtime behavior implemented.
