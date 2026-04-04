@@ -22,3 +22,7 @@ v0.0.0
 - All changes are structure-only, including the minimal handle table contract surface.
 - All authority-surface changes are structure-only and introduce no runtime behavior.
 - No runtime behavior implemented.
+- Added include/os/transfer.h
+- Added tests/compile/transfer_header_compile.c
+- Transfer contract additions are structure-only and introduce no runtime behavior.
+
