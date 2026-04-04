@@ -2,6 +2,12 @@ CHANGELOG
 
 Notable repository changes are tracked in this file.
 
+## [v0.0.1]
+- Established kernel-internal contract surfaces for authority validation, handle table, and object lifetime.
+- Added a minimal internal authority validation helper surface for deterministic validation-order shape.
+- Added CI compile-shape enforcement via `.github/workflows/ci.yml`.
+- Continued structure-first pre-alpha development with no production runtime behavior.
+
 v0.0.0
 - Added .github/workflows/ci.yml for initial CI scaffolding on push and pull_request.
 - CI compiles all tests/compile/*_compile.c files using `cc -Iinclude -I. -c` as compile-shape validation.
