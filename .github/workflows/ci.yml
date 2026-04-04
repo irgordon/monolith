@@ -21,4 +21,4 @@ jobs:
             found=1
             cc -Iinclude -I. -c "$file"
           done
-          [ "$found" -eq 1 ]
+          [ "$found" -eq 1 ] || { echo "Error: No *_compile.c files found in tests/compile"; exit 1; }
