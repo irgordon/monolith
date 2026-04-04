@@ -41,3 +41,7 @@ v0.0.0
 - Added kernel/object/object_lifetime_contract.h
 - Added tests/compile/object_lifetime_contract_compile.c
 - Internal object lifetime contract additions are structure-only and introduce no runtime behavior.
+- Added kernel/object/authority_validation.h
+- Added kernel/object/authority_validation.c
+- Added tests/compile/authority_validation_header_compile.c
+- Introduced a minimal internal helper surface for deterministic authority validation-order shape only; no lookup, rights enforcement, mutation, or full authority validation behavior is implemented.
