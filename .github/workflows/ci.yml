@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  compile-shape:
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Compile compile-shape tests
+        run: |
+          set -euo pipefail
+          found=0
+          for file in $(find tests/compile -maxdepth 1 -type f -name '*_compile.c' | sort); do
+            found=1
+            cc -Iinclude -I. -c "$file"
+          done
+          [ "$found" -eq 1 ] || { echo "Error: No *_compile.c files found in tests/compile"; exit 1; }
