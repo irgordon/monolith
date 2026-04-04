@@ -1,0 +1,16 @@
+#include <os/status.h>
+
+int main(void) {
+    os_status_t s = OS_STATUS_SUCCESS;
+
+    s += OS_STATUS_INVALID_HANDLE;
+    s += OS_STATUS_WRONG_TYPE;
+    s += OS_STATUS_ACCESS_DENIED;
+    s += OS_STATUS_OBJECT_DEAD;
+    s += OS_STATUS_RIGHTS_INSUFFICIENT;
+    s += OS_STATUS_TRANSFER_FORBIDDEN;
+    s += OS_STATUS_REVOCATION_COMPLETE;
+    s += OS_STATUS_REVOCATION_PENDING;
+
+    return (s == OS_STATUS_SUCCESS) ? 0 : 0;
+}
