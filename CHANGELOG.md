@@ -3,6 +3,8 @@ CHANGELOG
 Notable repository changes are tracked in this file.
 
 v0.0.0
+- Added .github/workflows/ci.yml for initial CI scaffolding on push and pull_request.
+- CI compiles all tests/compile/*_compile.c files using `cc -Iinclude -I. -c` as compile-shape validation.
 - Added include/os/status.h
 - Added include/os/types.h
 - Added include/os/compiler.h

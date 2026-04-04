@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  compile-shape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Compile compile-shape tests
+        run: |
+          set -euo pipefail
+          for file in tests/compile/*_compile.c; do
+            cc -Iinclude -I. -c "$file"
+          done
